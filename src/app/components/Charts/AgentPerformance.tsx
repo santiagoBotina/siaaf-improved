@@ -4,16 +4,16 @@ import { memo } from "react";
 
 const Component = () => {
   const agents = [
-    { name: "Victor", performance: 95 },
-    { name: "Oswaldo", performance: 80 },
-    { name: "Carla", performance: 70 },
-    { name: "Camila", performance: 60 },
+    { name: "Clara Telegram", performance: 95 },
+    { name: "Juan WP", performance: 80 },
+    { name: "Victor GPT", performance: 70 },
+    { name: "Oswaldo Telegram", performance: 60 },
   ];
 
   return (
     <MetricCard
       title="Rendimiento de Agentes"
-      value="Agente Top: Victor"
+      value="Agente Top: Sara WP"
       subtitle="Últimos 30 días +10%"
       icon={User}
       trend="+10%"

@@ -20,9 +20,9 @@ const Component = () => {
 
   return (
     <MetricCard
-      title="Distribución de duración de llamadas"
+      title="Distribución de duración de interacciones"
       value="Promedio: 5 min"
-      subtitle="Últimos 30 días -5%"
+      subtitle="Últimos 30 días +5%"
       icon={Clock}
     >
       <div className="h-32">

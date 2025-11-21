@@ -25,7 +25,7 @@ const Component = ({ routes }: Props) => {
   return (
     <div className="w-80 bg-white border-r border-gray-200 flex flex-col h-screen top-0 fixed left-0 z-10">
       <div className="p-7 flex-shrink-0">
-        <H1 title="Nexa-Talk" />
+        <H1 title="Wabi" />
       </div>
 
       <div className="flex-1 overflow-y-auto">

@@ -4,7 +4,7 @@ import { CallStatus } from "@/app/components/CallsTable/types";
 const callsData = [
   {
     id: "1",
-    agent: "Victor H.",
+    agent: "Victor WP",
     client: "Milena R.",
     duration: "15 min",
     time: "10:00 AM",
@@ -13,7 +13,7 @@ const callsData = [
   },
   {
     id: "2",
-    agent: "Carla P.",
+    agent: "Carla WP",
     client: "Juan Carlos B.",
     duration: "20 min",
     time: "11:30 AM",
@@ -22,7 +22,7 @@ const callsData = [
   },
   {
     id: "3",
-    agent: "Victor H.",
+    agent: "Victor Telegram",
     client: "Maria G.",
     duration: "10 min",
     time: "09:00 AM",
@@ -31,7 +31,7 @@ const callsData = [
   },
   {
     id: "4",
-    agent: "Sophia L.",
+    agent: "Sofia WP",
     client: "Hugo S.",
     duration: "25 min",
     time: "14:00 PM",
@@ -40,7 +40,7 @@ const callsData = [
   },
   {
     id: "5",
-    agent: "Sophia L.",
+    agent: "Sophia WP",
     client: "Martin T.",
     duration: "12 min",
     time: "16:30 PM",
@@ -49,7 +49,7 @@ const callsData = [
   },
   {
     id: "6",
-    agent: "Victor H.",
+    agent: "Victor Telegram",
     client: "Rodolfo M.",
     duration: "8 min",
     time: "08:45 AM",
@@ -58,7 +58,7 @@ const callsData = [
   },
   {
     id: "7",
-    agent: "Carla P.",
+    agent: "Carla WP",
     client: "Julio C.",
     duration: "35 min",
     time: "13:15 PM",
@@ -67,7 +67,7 @@ const callsData = [
   },
   {
     id: "8",
-    agent: "Oswaldo R.",
+    agent: "Oswaldo GPT",
     client: "Cristina L.",
     duration: "18 min",
     time: "15:45 PM",
@@ -90,7 +90,7 @@ export default function CallsPage() {
   return (
     <>
       <div className="mb-6">
-        <h1 className="text-2xl font-bold text-gray-900">Calls</h1>
+        <h1 className="text-2xl font-bold text-gray-900">Chats</h1>
       </div>
 
       <div className="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm">

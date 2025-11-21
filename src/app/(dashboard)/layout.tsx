@@ -10,7 +10,7 @@ const routes = [
   },
   {
     path: "/calls",
-    label: "Llamadas",
+    label: "Chats",
     icon: "phone",
   },
   {

@@ -100,7 +100,7 @@ export const CallSummary = ({ transcription }: { transcription: string }) => {
     return (
       <div className="mb-6">
         <h2 className="text-lg font-semibold text-gray-900 mb-3">
-          Resumen de la llamada
+          Resumen del chat
         </h2>
         <div className="bg-white rounded-lg border border-gray-200 p-4">
           <p className="text-sm text-gray-500">
@@ -152,7 +152,7 @@ export const CallSummary = ({ transcription }: { transcription: string }) => {
     <div className="mb-6">
       <h2 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
         <FileText className="w-5 h-5 mr-2 text-gray-600" />
-        Resumen de la llamada
+        Resumen del chat
       </h2>
 
       <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">

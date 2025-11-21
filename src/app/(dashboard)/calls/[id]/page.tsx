@@ -1,21 +1,21 @@
 // Call Transcription Component
-import { Headphones, Play, User } from "lucide-react";
+import { Headphones, User } from "lucide-react";
 import { CallSummary } from "@/app/components/CallSummary";
 
 const CallHeader = ({ agent, duration, date }) => {
   return (
     <div className="mb-6">
       <h1 className="text-2xl font-bold text-gray-900 mb-2">
-        Detalles de la llamada
+        Detalles del chat
       </h1>
       <p className="text-sm text-gray-600 mb-4">
-        Revisa información detallada de esta llamada.
+        Revisa información detallada de este chat.
       </p>
 
       <div className="bg-white rounded-lg border border-gray-200 p-4">
         <div className="flex items-center justify-between mb-3">
           <h2 className="text-lg font-semibold text-gray-900">
-            Llamada con el/la agente {agent}
+            Chat con el/la agente {agent}
           </h2>
           <div className="w-16 h-16 bg-gradient-to-br from-orange-200 to-orange-400 rounded-lg flex items-center justify-center">
             <div className="w-8 h-8 bg-gradient-to-br from-orange-300 to-orange-500 rounded-full"></div>
@@ -27,11 +27,6 @@ const CallHeader = ({ agent, duration, date }) => {
           <span>Duración: {duration}</span>
           <span>Fecha: {date}</span>
         </div>
-
-        <button className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors">
-          <Play size={16} />
-          <span className="text-sm font-medium">Escuchar</span>
-        </button>
       </div>
     </div>
   );
@@ -72,7 +67,7 @@ const CallTranscription = ({ transcription }: { transcription: string }) => {
   return (
     <div className="mb-6">
       <h2 className="text-lg font-semibold text-gray-900 mb-3">
-        Transcripción de la llamada
+        Resumen del chat con cliente
       </h2>
       <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
         {parsedLines.length === 0 ? (
@@ -177,7 +172,7 @@ const AgentInformation = ({ agent }) => {
           </div>
           <div>
             <h3 className="font-medium text-gray-900">{agent.name}</h3>
-            <p className="text-sm text-gray-600">{agent.email}</p>
+            <p className="text-sm text-gray-600">{agent.id}</p>
           </div>
         </div>
       </div>
@@ -213,18 +208,18 @@ const AdditionalInformation = ({ callDetails }) => {
 
 export default function CallDetailsPage() {
   const callData = {
-    agent: "Sarah Miller",
-    duration: "15 min",
-    date: "Julio 26, 2024",
+    agent: "Victor WP",
+    duration: "22 min",
+    date: "Septiembre 15, 2024",
     transcription:
-      "Cliente: Hola, recibí su llamada. Sé que tengo pagos atrasados. Agente Sarah: Gracias por contestar, Sr. García. Entiendo su situación y estoy aquí para ayudarle a encontrar una solución. Su cuenta tiene un saldo pendiente de $2'500.000. ¿Podemos hablar sobre sus opciones de pago? Cliente: La verdad es que he tenido dificultades financieras este mes, pero puedo pagar algo. Agente Sarah: Aprecio su honestidad. ¿Qué cantidad podría pagar hoy para comenzar? Cliente: Podría hacer un pago de $500.000 ahora y el resto en dos pagos mensuales. Agente Sarah: Perfecto. Puedo ofrecerle un plan de $500.000 hoy, y luego $1'000.000 cada uno los próximos dos meses. ¿Le parece razonable? Cliente: Sí, eso sí puedo manejarlo. Agente Sarah: Excelente. Voy a preparar el acuerdo de pago. ¿Prefiere débito automático o pagos manuales? Cliente: Prefiero hacer los pagos manualmente. Agente Sarah: Perfecto. Le enviaré la confirmación por correo. Gracias por trabajar conmigo en esta solución.",
+      "Cliente: Hola, estoy buscando unos zapatos deportivos para correr. Agente Carlos: ¡Buen día! Con gusto le ayudo. ¿Qué tipo de superficie usa principalmente para correr? ¿Asfalto, tierra o pista? Cliente: Principalmente asfalto, corro en la ciudad por las mañanas. Agente Carlos: Perfecto. Tenemos varias opciones excelentes. ¿Cuál es su talla y tiene alguna preferencia de marca o color? Cliente: Uso talla 42. Me gustan Nike o Adidas, preferiblemente en negro o gris. Agente Carlos: Tengo dos modelos que le podrían interesar. El Nike Air Zoom Pegasus a $380.000 y el Adidas Ultraboost a $420.000. Ambos son ideales para asfalto y tienen excelente amortiguación. Cliente: ¿Cuál me recomienda? Agente Carlos: El Ultraboost tiene mejor retorno de energía y es más cómodo para distancias largas. El Pegasus es más ligero y responsive. ¿Qué distancias corre normalmente? Cliente: Entre 5 y 10 kilómetros por sesión. Agente Carlos: Entonces le recomendaría el Ultraboost. Además, hoy tenemos un 15% de descuento, quedaría en $357.000. Cliente: Me gusta. ¿Los tienen en gris? Agente Carlos: Sí, tenemos en gris oscuro con detalles blancos. ¿Quiere que le aparte un par para que los pruebe? Cliente: Sí, por favor. ¿Puedo pasar a recogerlos mañana? Agente Carlos: Claro que sí. Los reservo a su nombre. ¿Necesita medias deportivas o algún otro accesorio? Cliente: No, solo los zapatos. Gracias. Agente Carlos: Perfecto. Le envío la confirmación de su reserva por correo. Lo esperamos mañana.",
     agentInfo: {
-      name: "Sarah Miller",
-      email: "sarah.miller@example.com",
+      name: "Victor WP",
+      id: "9482ah72-28272hdgb-29238",
     },
     additionalInfo: {
-      "ID de llamada": "#789012",
-      "Tipo de llamada": "Inbound",
+      "ID de chat": "#456789",
+      "Tipo de contacto": "Chat en vivo",
       "Estatus de transcripción": "Completado",
       Departamento: "Servicio al Cliente",
     },
